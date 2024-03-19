@@ -1,0 +1,15 @@
+groups:
+  publish:
+    generators:
+      - name: fernapi/fern-typescript-node-sdk
+        version: 0.9.5
+        output:
+          location: npm
+          package-name: petstore-sdk #https://www.npmjs.com/package/petstore-sdk
+          token: ${NPM_TOKEN}
+      - name: fernapi/fern-python-sdk
+        version: 0.8.0
+        output:
+          location: pypi
+          package-name: petstore #https://pypi.org/project/petstore/
+          token: ${PYPI_TOKEN}
